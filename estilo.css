@@ -49,11 +49,6 @@ body {
     padding: 30px 20px;
   }
 
-  #sim, #nao {
-    width: 100px;
-    margin: 10px;
-    position: static; /* tira o absoluto pra não sair do lugar */
-  }
 }
 
 /* Telas médias — tablets (601px até 1024px) */
