@@ -1,32 +1,65 @@
 body {
-    background-color: red;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
+
+/* Estilo base para telas grandes */
 .painel {
-    margin: auto;
-    text-align: center;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    border-radius: 20px;
-    padding-top: 50px;
-    font-family: cursive;
+  margin: 50px auto;
+  text-align: center;
+  width: 500px;
+  max-width: 90%; /* faz a largura se ajustar quando a tela for menor */
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 50px;
+  font-family: cursive;
 }
+
+/* Botão "sim" */
 #sim {
-    height: 40px;
-    width: 60px;
-    background-color: red;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    margin-left: -50px;
+  height: 40px;
+  width: 60px;
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  margin-left: -50px;
 }
+
+/* Botão "não" */
 #nao {
-    position: absolute;
-    height: 40px;
-    width: 60px;
-    background-color: red;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    margin-left: 10px;
+  position: absolute;
+  height: 40px;
+  width: 60px;
+  background-color: red;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Telas pequenas — celulares (até 600px) */
+@media (max-width: 600px) {
+  .painel {
+    width: 90%;      /* ocupa quase toda a largura da tela */
+    height: auto;    /* altura automática para se ajustar */
+    padding: 30px 20px;
+  }
+
+  #sim, #nao {
+    width: 100px;
+    margin: 10px;
+    position: static; /* tira o absoluto pra não sair do lugar */
+  }
+}
+
+/* Telas médias — tablets (601px até 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .painel {
+    width: 80%;
+    height: auto;
+  }
 }
