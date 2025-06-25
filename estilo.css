@@ -1,0 +1,32 @@
+body {
+    background-color: red;
+}
+.painel {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 50px;
+    font-family: cursive;
+}
+#sim {
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: -50px;
+}
+#nao {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10px;
+}
